@@ -8,3 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/cv', [CVController::class, 'index'])->name('cv.index');
+
+Route::get('/test', function () {
+    return 'Hello World';
+});
